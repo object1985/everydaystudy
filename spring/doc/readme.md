@@ -65,14 +65,14 @@ public class GreetingController {
 src/main/resources/templates/greeting.html を作成する。
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Demo App Greeting Page</title>
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-
+    <p th:text="'Hello, ' + ${name} + '!'" />
 </body>
 </html>
 ```
